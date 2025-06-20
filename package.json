@@ -6,7 +6,7 @@
   "scripts": {
     "killservers": "killall -9 node",
     "viewlive": "lsof -Pi | grep LISTEN",
-    "start": "node server/server.js",
+    "start": "cd server && npm run start",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
